@@ -1,0 +1,28 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:client\" \"npm run start:electron\"",
+    "build": "vite build",
+    "dev:client": "cd client && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "start:electron": "electron electron/main.js"
+  },
+  "dependencies": {
+    "@electron-addons/electron-forge-maker-nsis": "^7.0.2",
+    "dotenv": "^16.0.0",
+    "electron-squirrel-startup": "^1.0.1",
+    "wait-port": "^1.1.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.7.0",
+    "@electron-forge/maker-squirrel": "^7.7.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.7.0",
+    "@electron-forge/plugin-fuses": "^7.7.0",
+    "@electron/fuses": "^1.8.0",
+    "concurrently": "^9.1.2",
+    "dotenv-cli": "^10.0.0",
+    "electron": "^34.0.1"
+  }
+}

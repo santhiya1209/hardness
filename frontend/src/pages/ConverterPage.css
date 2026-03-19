@@ -1,0 +1,140 @@
+.converter-app {
+  font-family: "Segoe UI", sans-serif;
+  background: #eef5ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.converter-header {
+  background: linear-gradient(to right, #0d6efd, #1da1f2);
+  color: white;
+  padding: 18px 25px;
+}
+
+.converter-header h2 {
+  margin: 0;
+}
+
+.converter-header p {
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+/* CONTENT */
+.converter-content {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* INPUT PANEL */
+.input-panel {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #d6e4ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-panel h3 {
+  color: #0d6efd;
+}
+
+.input-panel label {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #333;
+}
+
+.input-panel input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #cfe2ff;
+  border-radius: 6px;
+}
+
+/* BUTTONS */
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.convert-btn {
+  flex: 1;
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  transition: 0.2s;
+}
+
+.convert-btn:hover {
+  background: #0b5ed7;
+}
+
+.reset-btn {
+  flex: 1;
+  background: #e2ecff;
+  border: none;
+  padding: 10px;
+  border-radius: 6px;
+  color: #0d6efd;
+}
+
+/* OUTPUT PANEL */
+.output-panel {
+  flex: 2;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #d6e4ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.output-panel h3 {
+  color: #0d6efd;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* CARDS */
+.card {
+  background: linear-gradient(to right, #e7f1ff, #f4f9ff);
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid #cfe2ff;
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card span {
+  display: block;
+  font-size: 12px;
+  color: #555;
+}
+
+.card strong {
+  font-size: 22px;
+  color: #0d6efd;
+}
+
+.card.full {
+  grid-column: span 2;
+}

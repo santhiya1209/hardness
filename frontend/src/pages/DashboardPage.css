@@ -1,0 +1,135 @@
+/* MAIN APP */
+.app {
+  font-family: "Segoe UI", sans-serif;
+  background: #eef5ff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* TITLE BAR */
+.title-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to right, #0d6efd, #1da1f2);
+  color: white;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+.window-controls span {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+/* MENU BAR */
+.menu-bar {
+  display: flex;
+  background: #dce9ff;
+  padding: 8px 15px;
+}
+
+.menu-item {
+  margin-right: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #0d6efd;
+}
+
+/* DASHBOARD */
+.dashboard {
+  padding: 20px;
+  flex: 1;
+}
+
+/* SECTION TITLE */
+.section {
+  display: flex;
+  align-items: center;
+  margin: 15px 0 10px;
+}
+
+.section-number {
+  background: #0d6efd;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+
+.section-title {
+  font-weight: bold;
+  color: #333;
+}
+
+/* GRID (4 CARDS PER ROW) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* CARD */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #d6e4ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* PRIMARY CARD (MEASURE) */
+.card.primary {
+  background: linear-gradient(to right, #0d6efd, #1da1f2);
+  color: white;
+}
+
+.card.primary p {
+  color: #e0ecff;
+}
+
+/* CARD TEXT */
+.card h3 {
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* BUTTON */
+.card button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  border: none;
+  background: #0d6efd;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card.primary button {
+  background: white;
+  color: #0d6efd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

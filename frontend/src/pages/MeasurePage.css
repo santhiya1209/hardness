@@ -1,0 +1,154 @@
+.measure-app {
+  font-family: "Segoe UI", sans-serif;
+  background: #f5f7fa;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+.measure-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 25px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.measure-header h2 span {
+  color: #1da1f2;
+}
+
+.header-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.stream-btn {
+  background: #ddd;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+}
+
+.measure-btn {
+  background: #1da1f2;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 6px;
+}
+
+/* STEPS */
+.steps {
+  display: flex;
+  background: #e9eef2;
+}
+
+.step {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.step.active {
+  background: #cfe8ff;
+  font-weight: bold;
+}
+
+/* CONTENT */
+.measure-content {
+  display: flex;
+  flex: 1;
+}
+
+/* CAMERA */
+.camera-section {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.camera-toolbar {
+  background: #111;
+  padding: 10px;
+}
+
+.camera-toolbar button {
+  margin-right: 5px;
+}
+
+.camera-view {
+  flex: 1;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-signal {
+  color: #777;
+  text-align: center;
+}
+
+.camera-footer {
+  background: #111;
+  color: #ccc;
+  padding: 5px 10px;
+  font-size: 12px;
+  display: flex;
+  gap: 20px;
+}
+
+/* RIGHT PANEL */
+.right-panel {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* RESULT */
+.result-box {
+  background: linear-gradient(to right, #1da1f2, #0d6efd);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* PANELS */
+.panel-box {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 8px;
+}
+
+.calc-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px;
+}
+
+/* GRID */
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.grid2 .full {
+  grid-column: span 2;
+}
