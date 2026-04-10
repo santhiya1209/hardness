@@ -1,0 +1,17 @@
+node_modules/
+build/
+dist/
+dist_electron/
+
+*.log
+*.bin
+*.exe
+*.dll
+*.obj
+*.pdb
+*.lib
+*.cache
+*.tmp
+*.raw
+*.mp4
+*.zip
