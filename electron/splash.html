@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Hardness Tester Pro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --sky-darkest: #020d18;
+      --sky-dark:    #041525;
+      --sky-mid:     #062840;
+      --sky:         #0ea5e9;
+      --sky-bright:  #38bdf8;
+      --sky-glow:    rgba(14,165,233,0.35);
+      --sky-pale:    rgba(56,189,248,0.08);
+      --amber:       #f59e0b;
+      --green:       #22c55e;
+      --white:       #f0f9ff;
+      --grey:        #64748b;
+    }
+
+    html, body {
+      width: 100%; height: 100%;
+      background: var(--sky-darkest);
+      overflow: hidden;
+    }
+
+    /* ── Animated grid background ── */
+    body::before {
+      content: '';
+      position: fixed; inset: 0;
+      background-image:
+        linear-gradient(rgba(14,165,233,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(14,165,233,0.04) 1px, transparent 1px);
+      background-size: 40px 40px;
+      animation: gridMove 20s linear infinite;
+      z-index: 0;
+    }
+
+    @keyframes gridMove {
+      0%   { background-position: 0 0; }
+      100% { background-position: 40px 40px; }
+    }
+
+    /* ── Radial glow ── */
+    body::after {
+      content: '';
+      position: fixed;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px; height: 600px;
+      background: radial-gradient(circle, rgba(14,165,233,0.12) 0%, transparent 70%);
+      z-index: 0;
+      animation: breathe 4s ease-in-out infinite;
+    }
+
+    @keyframes breathe {
+      0%, 100% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+      50%       { opacity: 1;   transform: translate(-50%, -50%) scale(1.1); }
+    }
+
+    /* ── Main container ── */
+    .splash {
+      position: relative; z-index: 1;
+      width: 100%; height: 100vh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      gap: 0;
+    }
+
+    /* ── Corner decorations ── */
+    .corner {
+      position: fixed;
+      width: 80px; height: 80px;
+      opacity: 0.3;
+    }
+    .corner-tl { top: 20px; left: 20px;
+      border-top: 2px solid var(--sky); border-left: 2px solid var(--sky); }
+    .corner-tr { top: 20px; right: 20px;
+      border-top: 2px solid var(--sky); border-right: 2px solid var(--sky); }
+    .corner-bl { bottom: 20px; left: 20px;
+      border-bottom: 2px solid var(--sky); border-left: 2px solid var(--sky); }
+    .corner-br { bottom: 20px; right: 20px;
+      border-bottom: 2px solid var(--sky); border-right: 2px solid var(--sky); }
+
+    /* ── Scan line effect ── */
+    .scanline {
+      position: fixed; inset: 0;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(0,0,0,0.03) 2px,
+        rgba(0,0,0,0.03) 4px
+      );
+      z-index: 2;
+      pointer-events: none;
+    }
+
+    /* ── Logo diamond ── */
+    .logo-wrap {
+      position: relative;
+      margin-bottom: 28px;
+      animation: logoIn 0.8s cubic-bezier(0.34,1.56,0.64,1) both;
+    }
+
+    @keyframes logoIn {
+      from { opacity: 0; transform: scale(0.3) rotate(-180deg); }
+      to   { opacity: 1; transform: scale(1) rotate(0deg); }
+    }
+
+    .logo-diamond {
+      width: 90px; height: 90px;
+      background: linear-gradient(135deg, var(--sky-mid), var(--sky-dark));
+      border: 2px solid var(--sky);
+      transform: rotate(45deg);
+      display: flex; align-items: center; justify-content: center;
+      box-shadow:
+        0 0 30px var(--sky-glow),
+        0 0 60px rgba(14,165,233,0.15),
+        inset 0 0 20px rgba(14,165,233,0.1);
+      animation: diamondPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes diamondPulse {
+      0%, 100% { box-shadow: 0 0 30px var(--sky-glow), 0 0 60px rgba(14,165,233,0.15); }
+      50%       { box-shadow: 0 0 50px var(--sky-glow), 0 0 100px rgba(14,165,233,0.25); }
+    }
+
+    .logo-diamond i {
+      transform: rotate(-45deg);
+      font-size: 32px;
+      color: var(--sky-bright);
+      text-shadow: 0 0 20px var(--sky);
+    }
+
+    /* ── Orbiting ring ── */
+    .logo-ring {
+      position: absolute;
+      top: 50%; left: 50%;
+      width: 130px; height: 130px;
+      margin: -65px 0 0 -65px;
+      border: 1px solid rgba(56,189,248,0.3);
+      border-radius: 50%;
+      animation: orbit 4s linear infinite;
+    }
+
+    .logo-ring::before {
+      content: '';
+      position: absolute;
+      top: -3px; left: 50%;
+      width: 6px; height: 6px;
+      background: var(--sky-bright);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--sky);
+      margin-left: -3px;
+    }
+
+    @keyframes orbit {
+      from { transform: rotate(0deg); }
+      to   { transform: rotate(360deg); }
+    }
+
+    /* ── App name ── */
+    .app-name {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--white);
+      text-shadow: 0 0 30px rgba(56,189,248,0.5);
+      animation: textIn 0.6s ease both 0.3s;
+      margin-bottom: 4px;
+    }
+
+    .app-name span {
+      color: var(--sky-bright);
+    }
+
+    @keyframes textIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ── Tagline ── */
+    .tagline {
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--sky);
+      text-transform: uppercase;
+      animation: textIn 0.6s ease both 0.5s;
+      margin-bottom: 6px;
+    }
+
+    /* ── Company ── */
+    .company {
+      font-family: 'Rajdhani', sans-serif;
+      font-size: 13px;
+      letter-spacing: 2px;
+      color: var(--sky);
+      text-transform: uppercase;
+      animation: textIn 0.6s ease both 0.6s;
+      margin-bottom: 32px;
+    }
+
+    /* ── Divider ── */
+    .divider {
+      width: 280px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--sky), transparent);
+      margin-bottom: 28px;
+      animation: textIn 0.6s ease both 0.7s;
+    }
+
+    /* ── Status area ── */
+    .status-area {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      animation: textIn 0.6s ease both 0.8s;
+      width: 320px;
+    }
+
+    .status-row {
+      display: flex; align-items: center; gap: 10px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 12px;
+      color: var(--grey);
+      letter-spacing: 1px;
+    }
+
+    .status-dot {
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--grey);
+      flex-shrink: 0;
+    }
+
+    .status-dot.active {
+      background: var(--sky-bright);
+      box-shadow: 0 0 8px var(--sky);
+      animation: dotBlink 1s ease-in-out infinite;
+    }
+
+    .status-dot.done  { background: var(--green); box-shadow: 0 0 8px var(--green); }
+    .status-dot.error { background: #ef4444; }
+
+    @keyframes dotBlink {
+      0%, 100% { opacity: 1; }
+      50%       { opacity: 0.3; }
+    }
+
+    #status-text {
+      color: var(--sky-bright);
+      transition: all 0.3s ease;
+    }
+
+    /* ── Progress bar ── */
+    .progress-wrap {
+      width: 320px; height: 3px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 2px;
+      overflow: hidden;
+      margin-top: 6px;
+      position: relative;
+    }
+
+    .progress-bar {
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--sky), var(--sky-bright));
+      border-radius: 2px;
+      transition: width 0.4s ease;
+      box-shadow: 0 0 10px var(--sky);
+    }
+
+    /* Shimmer effect */
+    .progress-bar::after {
+      content: '';
+      position: absolute;
+      top: 0; right: 0;
+      width: 40px; height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.4), transparent);
+      animation: shimmer 1s ease-in-out infinite;
+    }
+
+    @keyframes shimmer {
+      0%   { opacity: 0; }
+      50%  { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    /* ── Version ── */
+    .version {
+      position: fixed;
+      bottom: 24px; right: 28px;
+      font-family: 'Share Tech Mono', monospace;
+      font-size: 10px;
+      color: rgba(100,116,139,0.5);
+      letter-spacing: 2px;
+    }
+
+    /* ── Particles ── */
+    .particle {
+      position: fixed;
+      width: 2px; height: 2px;
+      background: var(--sky-bright);
+      border-radius: 50%;
+      opacity: 0;
+      animation: float var(--dur) ease-in-out infinite var(--delay);
+    }
+
+    @keyframes float {
+      0%   { opacity: 0; transform: translateY(100vh) translateX(0); }
+      10%  { opacity: 0.6; }
+      90%  { opacity: 0.6; }
+      100% { opacity: 0; transform: translateY(-20px) translateX(var(--dx)); }
+    }
+  </style>
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Corner decorations -->
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+
+  <!-- Scan line -->
+  <div class="scanline"></div>
+
+  <!-- Floating particles -->
+  <script>
+    for (let i = 0; i < 20; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      p.style.cssText = `
+        left: ${Math.random()*100}%;
+        --dur: ${4 + Math.random()*6}s;
+        --delay: ${Math.random()*5}s;
+        --dx: ${(Math.random()-0.5)*100}px;
+        width: ${1+Math.random()*2}px;
+        height: ${1+Math.random()*2}px;
+      `;
+      document.body.appendChild(p);
+    }
+  </script>
+
+  <div class="splash">
+
+    <!-- Logo -->
+    <div class="logo-wrap">
+      <div class="logo-ring"></div>
+      <div class="logo-diamond">
+        <i class="fa-solid fa-diamond"></i>
+      </div>
+    </div>
+
+    <!-- App name -->
+    <div class="app-name">Hardness <span>Tester</span> Pro</div>
+    <div class="tagline">Vickers HV Measurement System</div>
+    <div class="company">Chennai Metco Pvt Ltd</div>
+
+    <div class="divider"></div>
+
+    <!-- Status -->
+    <div class="status-area">
+      <div class="status-row">
+        <div class="status-dot active" id="dot"></div>
+        <span id="status-text">Initializing system...</span>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar" id="progress"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Version -->
+  <div class="version">v1.0.0 &nbsp;|&nbsp; BUILD 2026</div>
+
+  <script>
+    const steps = [
+      { msg: 'Loading modules...',      pct: 15  },
+      { msg: 'Starting backend...',     pct: 30  },
+      { msg: 'Connecting camera SDK...',pct: 50  },
+      { msg: 'Checking hardware...',    pct: 65  },
+      { msg: 'Loading calibration...',  pct: 80  },
+      { msg: 'Launching interface...',  pct: 95  },
+      { msg: 'Ready.',                  pct: 100 },
+    ];
+
+    const bar  = document.getElementById('progress');
+    const txt  = document.getElementById('status-text');
+    const dot  = document.getElementById('dot');
+    let idx = 0;
+
+    function nextStep() {
+      if (idx >= steps.length) return;
+      const s = steps[idx++];
+      txt.textContent  = s.msg;
+      bar.style.width  = s.pct + '%';
+      if (s.pct === 100) {
+        dot.classList.remove('active');
+        dot.classList.add('done');
+        txt.style.color = '#22c55e';
+      }
+    }
+
+    // Advance steps every 500ms
+    nextStep();
+    const iv = setInterval(() => {
+      nextStep();
+      if (idx >= steps.length) clearInterval(iv);
+    }, 500);
+
+    // Check backend
+    fetch('http://localhost:3000/status')
+      .then(r => r.json())
+      .then(d => {
+        if (d.ok) {
+          dot.classList.remove('active');
+          dot.classList.add('done');
+          txt.textContent = 'Backend connected ✓';
+          txt.style.color = '#22c55e';
+        }
+      })
+      .catch(() => {
+        txt.textContent = 'Starting offline mode...';
+      });
+  </script>
+
+</body>
+</html>

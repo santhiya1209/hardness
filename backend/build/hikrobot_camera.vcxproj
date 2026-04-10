@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F60184F0-A637-FBBC-DF89-74FA6EA5B183}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>hikrobot_camera</RootNamespace>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+    <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Label="Locals">
+    <PlatformToolset>v145</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props"/>
+  <ImportGroup Label="ExtensionSettings"/>
+  <ImportGroup Label="PropertySheets">
+    <Import Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props"/>
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros"/>
+  <PropertyGroup>
+    <ExecutablePath>$(ExecutablePath);$(MSBuildProjectDirectory)\..\bin\;$(MSBuildProjectDirectory)\..\bin\</ExecutablePath>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <IntDir>$(Configuration)\obj\$(ProjectName)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.node</TargetExt>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.node</TargetExt>
+    <TargetName>$(ProjectName)</TargetName>
+    <TargetPath>$(OutDir)\$(ProjectName).node</TargetPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\include\node;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\src;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\config;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\openssl\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\uv\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\zlib;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\v8\include;C:\Users\SANTHIYA\Desktop\hardness-tester\backend\node_modules\node-addon-api;C:\Program Files (x86)\MVS\Development\Includes;..\native\hikrobot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:__cplusplus -std:c++17 /std:c++17 %(AdditionalOptions)</AdditionalOptions>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat></DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <MinimalRebuild>false</MinimalRebuild>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>false</OmitFramePointers>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=hikrobot_camera;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_DISABLE_CPP_EXCEPTIONS;NODE_ADDON_API_DISABLE_NODE_DEPRECATED;_USE_MATH_DEFINES;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/LTCG:INCREMENTAL %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;delayimp.lib;&quot;C:\\Users\\SANTHIYA\\AppData\\Local\\node-gyp\\Cache\\20.18.0\\x64\\node.lib&quot;;C:\Program Files (x86)\MVS\Development\Libraries\win64\MvCameraControl.lib</AdditionalDependencies>
+      <AdditionalOptions>/LTCG:INCREMENTAL /ignore:4199 %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName).node</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetExt>.node</TargetExt>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\include\node;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\src;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\config;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\openssl\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\uv\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\zlib;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\v8\include;C:\Users\SANTHIYA\Desktop\hardness-tester\backend\node_modules\node-addon-api;C:\Program Files (x86)\MVS\Development\Includes;..\native\hikrobot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=hikrobot_camera;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_DISABLE_CPP_EXCEPTIONS;NODE_ADDON_API_DISABLE_NODE_DEPRECATED;_USE_MATH_DEFINES;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;DEBUG;_DEBUG;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\include\node;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\src;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\config;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\openssl\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\uv\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\zlib;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\v8\include;C:\Users\SANTHIYA\Desktop\hardness-tester\backend\node_modules\node-addon-api;C:\Program Files (x86)\MVS\Development\Includes;..\native\hikrobot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:__cplusplus -std:c++17 /std:c++17 %(AdditionalOptions)</AdditionalOptions>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <DebugInformationFormat></DebugInformationFormat>
+      <DisableSpecificWarnings>4351;4355;4800;4251;4275;4244;4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <OmitFramePointers>true</OmitFramePointers>
+      <Optimization>Full</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=hikrobot_camera;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_DISABLE_CPP_EXCEPTIONS;NODE_ADDON_API_DISABLE_NODE_DEPRECATED;_USE_MATH_DEFINES;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <StringPooling>true</StringPooling>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWarningAsError>false</TreatWarningAsError>
+      <WarningLevel>Level3</WarningLevel>
+      <WholeProgramOptimization>false</WholeProgramOptimization>
+    </ClCompile>
+    <Lib>
+      <AdditionalOptions>/LTCG:INCREMENTAL %(AdditionalOptions)</AdditionalOptions>
+    </Lib>
+    <Link>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;delayimp.lib;&quot;C:\\Users\\SANTHIYA\\AppData\\Local\\node-gyp\\Cache\\20.18.0\\x64\\node.lib&quot;;C:\Program Files (x86)\MVS\Development\Libraries\win64\MvCameraControl.lib</AdditionalDependencies>
+      <AdditionalOptions>/LTCG:INCREMENTAL /ignore:4199 %(AdditionalOptions)</AdditionalOptions>
+      <DelayLoadDLLs>node.exe;%(DelayLoadDLLs)</DelayLoadDLLs>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <OutputFile>$(OutDir)$(ProjectName).node</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetExt>.node</TargetExt>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+    <ResourceCompile>
+      <AdditionalIncludeDirectories>C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\include\node;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\src;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\config;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\openssl\openssl\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\uv\include;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\zlib;C:\Users\SANTHIYA\AppData\Local\node-gyp\Cache\20.18.0\deps\v8\include;C:\Users\SANTHIYA\Desktop\hardness-tester\backend\node_modules\node-addon-api;C:\Program Files (x86)\MVS\Development\Includes;..\native\hikrobot;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NODE_GYP_MODULE_NAME=hikrobot_camera;USING_UV_SHARED=1;USING_V8_SHARED=1;V8_DEPRECATION_WARNINGS=1;_GLIBCXX_USE_CXX11_ABI=1;WIN32;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_DEPRECATE;_HAS_EXCEPTIONS=0;OPENSSL_NO_PINSHARED;OPENSSL_THREADS;NAPI_DISABLE_CPP_EXCEPTIONS;NODE_ADDON_API_DISABLE_NODE_DEPRECATED;_USE_MATH_DEFINES;BUILDING_NODE_EXTENSION;HOST_BINARY=&quot;node.exe&quot;;%(PreprocessorDefinitions);%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\binding.gyp"/>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\native\hikrobot\hikrobot_camera.cpp">
+      <ObjectFileName>$(IntDir)\native\hikrobot\hikrobot_camera.obj</ObjectFileName>
+    </ClCompile>
+    <ClCompile Include="C:\Users\SANTHIYA\AppData\Roaming\npm\node_modules\node-gyp\src\win_delay_load_hook.cc"/>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControl.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControl.dll&quot; &quot;$(OutDir)MvCameraControl.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvCameraControl.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvCameraControl.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControlWrapper.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControlWrapper.dll&quot; &quot;$(OutDir)MvCameraControlWrapper.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvCameraControlWrapper.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvCameraControlWrapper.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvUsb3vTL.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvUsb3vTL.dll&quot; &quot;$(OutDir)MvUsb3vTL.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvUsb3vTL.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvUsb3vTL.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvProducerU3V.cti">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvProducerU3V.cti&quot; &quot;$(OutDir)MvProducerU3V.cti&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvProducerU3V.cti to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvProducerU3V.cti</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\libusb0.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\libusb0.dll&quot; &quot;$(OutDir)libusb0.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/libusb0.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\libusb0.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\FormatConversion.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\FormatConversion.dll&quot; &quot;$(OutDir)FormatConversion.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/FormatConversion.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\FormatConversion.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MVMemAlloc.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MVMemAlloc.dll&quot; &quot;$(OutDir)MVMemAlloc.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MVMemAlloc.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MVMemAlloc.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvISPControl.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvISPControl.dll&quot; &quot;$(OutDir)MvISPControl.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvISPControl.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvISPControl.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvRender.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvRender.dll&quot; &quot;$(OutDir)MvRender.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvRender.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvRender.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MediaProcess.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MediaProcess.dll&quot; &quot;$(OutDir)MediaProcess.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MediaProcess.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MediaProcess.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GCBase_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GCBase_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)GCBase_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/GCBase_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\GCBase_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GenApi_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GenApi_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)GenApi_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/GenApi_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\GenApi_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\Log_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\Log_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)Log_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/Log_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\Log_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MathParser_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MathParser_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)MathParser_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MathParser_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MathParser_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\NodeMapData_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\NodeMapData_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)NodeMapData_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/NodeMapData_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\NodeMapData_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\XmlParser_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\XmlParser_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)XmlParser_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/XmlParser_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\XmlParser_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLAllSerial_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLAllSerial_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)CLAllSerial_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/CLAllSerial_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\CLAllSerial_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLProtocol_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLProtocol_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)CLProtocol_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/CLProtocol_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\CLProtocol_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\log4cpp_MD_VC120_v3_0_MV.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\log4cpp_MD_VC120_v3_0_MV.dll&quot; &quot;$(OutDir)log4cpp_MD_VC120_v3_0_MV.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/log4cpp_MD_VC120_v3_0_MV.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\log4cpp_MD_VC120_v3_0_MV.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvSDKVersion.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvSDKVersion.dll&quot; &quot;$(OutDir)MvSDKVersion.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvSDKVersion.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvSDKVersion.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraPatch.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraPatch.dll&quot; &quot;$(OutDir)MvCameraPatch.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/MvCameraPatch.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\MvCameraPatch.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\pthreadVC2.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\pthreadVC2.dll&quot; &quot;$(OutDir)pthreadVC2.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/pthreadVC2.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\pthreadVC2.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcp120.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcp120.dll&quot; &quot;$(OutDir)msvcp120.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/msvcp120.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\msvcp120.dll</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcr120.dll">
+      <FileType>Document</FileType>
+      <Command>call mkdir &quot;$(OutDir)&quot; 2&gt;nul &amp; set ERRORLEVEL=0 &amp; copy /Y &quot;C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcr120.dll&quot; &quot;$(OutDir)msvcr120.dll&quot;&#xD;&#xA;if %errorlevel% neq 0 exit /b %errorlevel%</Command>
+      <Message>Copying C:/Program Files (x86)/Common Files/MVS/Runtime/Win64_x64/msvcr120.dll to $(OutDir)</Message>
+      <Outputs>$(OutDir)\msvcr120.dll</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+  <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets"/>
+  <ImportGroup Label="ExtensionTargets"/>
+</Project>

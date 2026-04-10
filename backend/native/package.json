@@ -1,0 +1,9 @@
+{
+  "name": "hikrobot-native",
+  "version": "1.0.0",
+  "description": "Native Node.js addon for HikRobot camera (Vickers hardness detector)",
+  "scripts": {
+    "build": "node-gyp rebuild --directory .."
+  },
+  "private": true
+}

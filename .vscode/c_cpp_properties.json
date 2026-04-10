@@ -1,0 +1,26 @@
+{
+  "configurations": [
+    {
+      "name": "Win32",
+      "includePath": [
+        "${workspaceFolder}/**",
+        "C:/Program Files (x86)/MVS/Development/Includes",
+        "C:/Users/SANTHIYA/Desktop/hardness-tester/backend/node_modules/node-addon-api",
+        "C:/Users/SANTHIYA/AppData/Local/node-gyp/Cache/20.18.0/include/node",
+        "C:/Users/SANTHIYA/Desktop/hardness-tester/backend/native/hikrobot"
+      ],
+      "defines": [
+        "_DEBUG",
+        "UNICODE",
+        "_UNICODE",
+        "NAPI_DISABLE_CPP_EXCEPTIONS",
+        "NODE_ADDON_API_DISABLE_NODE_DEPRECATED"
+      ],
+      "compilerPath": "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/cl.exe",
+      "cStandard": "c17",
+      "cppStandard": "c++17",
+      "intelliSenseMode": "windows-msvc-x64"
+    }
+  ],
+  "version": 4
+}

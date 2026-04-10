@@ -1,0 +1,72 @@
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVCAMERACONTROL.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControl.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvCameraControl.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVCAMERACONTROLWRAPPER.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControlWrapper.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvCameraControlWrapper.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVUSB3VTL.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvUsb3vTL.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvUsb3vTL.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVPRODUCERU3V.CTI
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvProducerU3V.cti" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvProducerU3V.cti"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\LIBUSB0.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\libusb0.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\libusb0.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\FORMATCONVERSION.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\FormatConversion.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\FormatConversion.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVMEMALLOC.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MVMemAlloc.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MVMemAlloc.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVISPCONTROL.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvISPControl.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvISPControl.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVRENDER.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvRender.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvRender.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MEDIAPROCESS.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MediaProcess.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MediaProcess.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\GCBASE_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GCBase_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\GCBase_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\GENAPI_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GenApi_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\GenApi_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\LOG_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\Log_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\Log_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MATHPARSER_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MathParser_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MathParser_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\NODEMAPDATA_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\NodeMapData_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\NodeMapData_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\XMLPARSER_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\XmlParser_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\XmlParser_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\CLALLSERIAL_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLAllSerial_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\CLAllSerial_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\CLPROTOCOL_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLProtocol_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\CLProtocol_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\LOG4CPP_MD_VC120_V3_0_MV.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\log4cpp_MD_VC120_v3_0_MV.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\log4cpp_MD_VC120_v3_0_MV.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVSDKVERSION.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvSDKVersion.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvSDKVersion.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MVCAMERAPATCH.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraPatch.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\MvCameraPatch.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\PTHREADVC2.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\pthreadVC2.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\pthreadVC2.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MSVCP120.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcp120.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\msvcp120.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%
+^C:\PROGRAM FILES (X86)\COMMON FILES\MVS\RUNTIME\WIN64_X64\MSVCR120.DLL
+call mkdir "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\" 2>nul & set ERRORLEVEL=0 & copy /Y "C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcr120.dll" "C:\Users\SANTHIYA\Desktop\hardness-tester\backend\native\build\Release\msvcr120.dll"
+if %errorlevel% neq 0 exit /b %errorlevel%

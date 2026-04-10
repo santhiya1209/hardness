@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="..">
+      <UniqueIdentifier>{13ED4249-1F9C-5F0F-2651-29A73F3A7059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native">
+      <UniqueIdentifier>{751DE1B9-2CA6-B33D-2A40-92CBD5B002F3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..\native\hikrobot">
+      <UniqueIdentifier>{7B094625-D8FD-2F25-0999-5A726356B1DD}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users">
+      <UniqueIdentifier>{707347A1-1ABA-A9B2-9AF4-DE122F5D7F08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA">
+      <UniqueIdentifier>{340CB59A-56E8-D45F-3B27-0C3D5B3E2546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA\AppData">
+      <UniqueIdentifier>{DABCEBCE-33D1-4D68-EC67-0BC19A2A0901}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA\AppData\Roaming">
+      <UniqueIdentifier>{06897101-0A2C-F34A-36C2-4D0BE8BF5EB9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA\AppData\Roaming\npm">
+      <UniqueIdentifier>{E6F3EBE6-A3A6-AA7E-34C1-5CE4364854E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA\AppData\Roaming\npm\node_modules">
+      <UniqueIdentifier>{126A39EA-1D28-5689-C126-0DA0AB5837A0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA\AppData\Roaming\npm\node_modules\node-gyp">
+      <UniqueIdentifier>{49558BB4-6D34-CA91-A65D-85A65792DC11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Users\SANTHIYA\AppData\Roaming\npm\node_modules\node-gyp\src">
+      <UniqueIdentifier>{F1003AD6-4B6D-45DF-3F56-5CAC869BF55E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="..">
+      <UniqueIdentifier>{13ED4249-1F9C-5F0F-2651-29A73F3A7059}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:">
+      <UniqueIdentifier>{F87FD356-0FEB-9BC5-D1FA-368C81420008}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)">
+      <UniqueIdentifier>{B75A44CC-328C-1249-0656-113776D2154C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files">
+      <UniqueIdentifier>{E4606AC0-48CD-5C27-0EDB-8B64187ADE3D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS">
+      <UniqueIdentifier>{0EDE1474-8021-0C34-ADF3-A2D2F4EFC593}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime">
+      <UniqueIdentifier>{E54E968A-474C-76CE-130F-1CCB4F9B6978}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64">
+      <UniqueIdentifier>{5247A00A-8F0B-B1D4-EE61-EFE70E8D822B}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\native\hikrobot\hikrobot_camera.cpp">
+      <Filter>..\native\hikrobot</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\SANTHIYA\AppData\Roaming\npm\node_modules\node-gyp\src\win_delay_load_hook.cc">
+      <Filter>C:\Users\SANTHIYA\AppData\Roaming\npm\node_modules\node-gyp\src</Filter>
+    </ClCompile>
+    <None Include="..\binding.gyp">
+      <Filter>..</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControl.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraControlWrapper.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvUsb3vTL.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvProducerU3V.cti">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\libusb0.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\FormatConversion.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MVMemAlloc.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvISPControl.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvRender.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MediaProcess.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GCBase_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\GenApi_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\Log_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MathParser_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\NodeMapData_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\XmlParser_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLAllSerial_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\CLProtocol_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\log4cpp_MD_VC120_v3_0_MV.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvSDKVersion.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\MvCameraPatch.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\pthreadVC2.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcp120.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+    <None Include="C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64\msvcr120.dll">
+      <Filter>C:\Program Files (x86)\Common Files\MVS\Runtime\Win64_x64</Filter>
+    </None>
+  </ItemGroup>
+</Project>

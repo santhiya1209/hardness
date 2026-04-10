@@ -1,0 +1,141 @@
+/* MenuBar.css — Shared application menu bar styles */
+
+/* ── Bar ── */
+.menubar {
+  display: flex;
+  align-items: stretch;
+  height: 26px;
+  background: #0f172a;
+  border-bottom: 1px solid #1e293b;
+  padding: 0 4px;
+  flex-shrink: 0;
+  user-select: none;
+  position: relative;
+  z-index: 1000;
+}
+
+/* ── Top-level menu item ── */
+.menubar-item {
+  position: relative;
+}
+
+.menubar-btn {
+  height: 26px;
+  padding: 0 10px;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  font-size: 12px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: background 0.1s, color 0.1s;
+  outline: none;
+  white-space: nowrap;
+}
+
+.menubar-btn:hover,
+.menubar-item.open .menubar-btn {
+  background: #1e40af;
+  color: #fff;
+}
+
+/* ── Dropdown ── */
+.menubar-dropdown {
+  position: fixed;
+  top: 26px;
+  min-width: 220px;
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 4px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.7), 0 2px 8px rgba(0,0,0,0.5);
+  padding: 3px 0;
+  z-index: 99999;
+  animation: menuDrop 0.08s ease-out;
+}
+
+@keyframes menuDrop {
+  from { opacity: 0; transform: translateY(-4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Dropdown item ── */
+.menubar-dd-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 5px 12px;
+  background: transparent;
+  border: none;
+  color: #cbd5e1;
+  font-size: 12px;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  cursor: pointer;
+  text-align: left;
+  gap: 0;
+  transition: background 0.08s;
+  outline: none;
+}
+
+.menubar-dd-item:hover:not(:disabled) {
+  background: #1e40af;
+  color: #fff;
+}
+
+.menubar-dd-item.active {
+  color: #38bdf8;
+  background: rgba(56,189,248,0.08);
+}
+
+.menubar-dd-item.active:hover {
+  background: #1e40af;
+  color: #fff;
+}
+
+.menubar-dd-item:disabled {
+  color: #475569;
+  cursor: default;
+}
+
+.menubar-dd-icon {
+  width: 20px;
+  flex-shrink: 0;
+  color: #64748b;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.menubar-dd-item:hover:not(:disabled) .menubar-dd-icon,
+.menubar-dd-item.active .menubar-dd-icon {
+  color: inherit;
+}
+
+.menubar-dd-label {
+  flex: 1;
+  padding-right: 16px;
+}
+
+.menubar-dd-shortcut {
+  font-size: 10px;
+  color: #475569;
+  font-family: 'Cascadia Code', 'Consolas', monospace;
+  flex-shrink: 0;
+}
+
+.menubar-dd-item:hover:not(:disabled) .menubar-dd-shortcut {
+  color: rgba(255,255,255,0.55);
+}
+
+/* ── Separator ── */
+.menubar-sep {
+  height: 1px;
+  background: #1e293b;
+  margin: 3px 0;
+}
+
+/* ── Responsive: hide shortcuts on small screens ── */
+@media (max-width: 800px) {
+  .menubar-dd-shortcut { display: none; }
+  .menubar-btn { padding: 0 7px; font-size: 11px; }
+}

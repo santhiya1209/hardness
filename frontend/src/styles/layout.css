@@ -1,0 +1,21 @@
+/* layout.css — extra layout + toast styles */
+
+/* ── Toast ── */
+.toast {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  border-radius: 8px;
+  font-family: var(--font-data);
+  font-size: 11px;
+  box-shadow: 0 4px 16px rgba(0,0,0,.15);
+  animation: toast-in .2s ease;
+  border: 1px solid;
+}
+@keyframes toast-in { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
+
+.toast-info    { background: var(--sky-dim);    border-color: var(--sky-border);         color: var(--sky-deep);  }
+.toast-success { background: rgba(22,163,74,.08); border-color: rgba(22,163,74,.25);   color: #16a34a; }
+.toast-error   { background: rgba(220,38,38,.08); border-color: rgba(220,38,38,.25);   color: var(--red);   }
+.toast-warn    { background: rgba(217,119,6,.08); border-color: rgba(217,119,6,.25);   color: var(--amber); }

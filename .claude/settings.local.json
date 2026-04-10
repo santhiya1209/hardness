@@ -1,0 +1,32 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(rm -rf build/Release/hikrobot_camera.* build/Release/*.pdb)",
+      "Bash(node-gyp build:*)",
+      "mcp__ide__getDiagnostics",
+      "Read(//c/Program Files \\(x86\\)/**)",
+      "Read(//c/Program Files \\(x86\\)/MVS//**)",
+      "Read(//c/Program Files \\(x86\\)/Common Files/MVS//**)",
+      "Bash(powershell:*)",
+      "Bash(node-gyp rebuild:*)",
+      "Bash(taskkill /F /IM electron.exe)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(taskkill /F /IM electron.exe /T)",
+      "Bash(taskkill /F /IM node.exe /T)",
+      "Bash(taskkill /F /IM esbuild.exe /T)",
+      "Bash(node-gyp configure:*)",
+      "Bash(npm run:*)",
+      "Bash(ls /c/Users/SANTHIYA/Desktop/hardness-tester/frontend/src/pages/*.css ls /c/Users/SANTHIYA/Desktop/hardness-tester/frontend/src/pages/MenuBar* grep -r \"^import\" /c/Users/SANTHIYA/Desktop/hardness-tester/frontend/src/pages/SettingsPage.tsx)",
+      "Bash(npx tsc:*)",
+      "Bash(cmd:*)",
+      "Bash(wc:*)",
+      "Bash(taskkill /F /IM \"Hardness Tester Pro.exe\")",
+      "Bash(taskkill //F //IM electron.exe)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(taskkill //F //IM \"Hardness Tester Pro.exe\")",
+      "Bash(grep -E \"error C|error LNK|\\\\.node$|gyp info ok\")",
+      "Bash(python3:*)",
+      "Bash(grep -E \"error|warning C4[^3]|ok$|\\\\.node$\")"
+    ]
+  }
+}

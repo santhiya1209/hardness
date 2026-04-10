@@ -1,0 +1,27 @@
+﻿{
+  "targets": [
+    {
+      "target_name": "hikrobot_camera",
+      "sources": [
+        "hikrobot_camera.cpp"
+      ],
+      "include_dirs": [
+        "<!@(node -p \"require('node-addon-api').include\")",
+        "C:/Program Files (x86)/MVS/Development/Includes"
+      ],
+      "libraries": [
+        "C:/Program Files (x86)/MVS/Development/Libraries/win64/MvCameraControl.lib"
+      ],
+      "defines": [
+        "NAPI_VERSION=8",
+        "NAPI_DISABLE_CPP_EXCEPTIONS"
+      ],
+      "msvs_settings": {
+        "VCCLCompilerTool": {
+          "ExceptionHandling": 0,
+          "AdditionalOptions": [ "/std:c++17" ]
+        }
+      }
+    }
+  ]
+}
